@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Basket | Online Shop</title>
+    <link href="src/main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="products.html">Products</a>
+                </li>
+                <li>
+                    <a href="#blog">Blog</a>
+                </li>
+                <li>
+                    <a href="#about">About Us</a>
+                </li>
+                <li class="fl-r">
+                    <a href="basket.html"><i class="fa fa-shopping-cart"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="basket-section">
+            <h2 class="center section-title">Basket <i class="fa fa-shopping-cart"></i></h2>
+            <table id="basket-table">
+                <tr>
+                    <td colspan="3">
+                        <h1 class="center">Your basket is empty!</h1>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <br />
+    <footer>
+        <span>New Balance family of brands </span>
+        <img src="src/images/teamsports-logo.svg" />
+        <img src="src/images/warror.svg" />
+        <img src="src/images/brine-logo.svg" />
+    </footer>
+
+    <table id="basket-template">
+        <tbody id="basket-template-body">
+            <tr id="basket-item-__ID__">
+                <td style="width:200px">
+                    <img src="__IMG__" width="150px" />
+                </td>
+                <td>
+                    <h2>__TITLE__</h2>
+                    <h3>__PRICE__$</h3>
+                </td>
+                <td style="width: 15px;">
+                    <b id="qty___ID__">__QTY__</b>
+                </td>
+                <td style="width: 25px;">
+                    <input type="button" class="btn-basket" value="+" onclick="increaseQTY(__ID__)"/>
+                    <br/>
+                    <input type="button" class="btn-basket" value="-" onclick="decreaseQTY(__ID__)"/>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="utils/cookies.js"></script>
+    <script src="models/Product.js"></script>
+    <script src="db/ProductDB.js"></script>
+    <script src="db/BasketDB.js"></script>
+    <script src="handlers/ProductHandler.js"></script>
+    <script src="src/main.js"></script>
+    <script src="controllers/basketCtrl.js"></script>
+</body>
+
+</html>

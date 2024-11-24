@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Online Shop</title>
+    <link href="src/main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="products.html">Products</a>
+                </li>
+                <li>
+                    <a href="#blog">Blog</a>
+                </li>
+                <li>
+                    <a href="#about">About Us</a>
+                </li>
+                <li class="fl-r">
+                    <a href="basket.html"><i class="fa fa-shopping-cart"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Slider -->
+        <section>
+            <img src="src/images/banner.jpeg" width="100%" />
+        </section>
+        <section>
+            <h2 class="center section-title">New Products</h2>
+            <section id="new-products">
+                <br />
+                <br />
+                <a href="products.html" class="btn">More Products</a>
+            </section>
+        </section>
+    </main>
+
+    <br />
+    <footer>
+        <span>New Balance family of brands </span>
+        <img src="src/images/teamsports-logo.svg" />
+        <img src="src/images/warror.svg" />
+        <img src="src/images/brine-logo.svg" />
+    </footer>
+
+
+    <div id="product-item-template">
+        <div class="product-item">
+            <a href="product.html?id=__ID__">
+                <img class="product-image" src="__IMG__" />
+                <div class="product-info">
+                    <h3>
+                        __TITLE__
+                        <span class="fl-r product-price">$__PRICE__</span>
+                    </h3>
+                    <span class="product-category">__CAT__</span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <script src="utils/cookies.js"></script>
+    <script src="models/Product.js"></script>
+    <script src="db/ProductDB.js"></script>
+    <script src="db/BasketDB.js"></script>
+    <script src="handlers/ProductHandler.js"></script>
+    <script src="src/main.js"></script>
+    <script src="controllers/indexCtrl.js"></script>
+</body>
+
+</html>

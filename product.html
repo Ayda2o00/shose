@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Product | Online Shop</title>
+    <link href="src/main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="products.html">Products</a>
+                </li>
+                <li>
+                    <a href="#blog">Blog</a>
+                </li>
+                <li>
+                    <a href="#about">About Us</a>
+                </li>
+                <li class="fl-r">
+                    <a href="basket.html"><i class="fa fa-shopping-cart"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <section id="product">
+                <div class="left-box">
+                    <img id="product-image" class="product-image" src="src/images/shoes1.jpeg" />
+                </div>
+                <div class="right-box">
+                    <h2 id="product-title" class="center section-title">Fresh fowm X 860v12</h2>
+                    <span id="product-price" class="product-price">$134.99</span>
+                    <br />
+                    <span id="product-category" class="product-category">Men's Running </span>
+                    <br />
+                    <p id="product-description" >
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, nihil, nisi, odit ipsa at
+                        beatae nemo aut aliquid iusto incidunt harum itaque eos quis debitis. Recusandae pariatur earum
+                        magnam ipsam!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam perferendis harum voluptatem,
+                        laborum nam provident maiores odit, exercitationem ipsam ab dolor placeat distinctio delectus
+                        consequuntur. Excepturi dolor rem optio hic aspernatur commodi necessitatibus quasi, eos ex
+                        consequuntur numquam aliquam soluta cum consequatur beatae voluptatem voluptatibus ratione.
+                        Inventore, nam expedita facilis quisquam architecto totam itaque nesciunt reiciendis vel sit,
+                        in, obcaecati molestias tempora dignissimos accusamus at aspernatur. Magni iusto porro
+                        reprehenderit et, corporis necessitatibus repudiandae sit reiciendis ad magnam in consequatur
+                        eum numquam officia aut amet alias, soluta sed recusandae tempore explicabo optio sunt accusamus
+                        autem. Expedita culpa rerum fugiat omnis!
+                    </p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <a class="btn" onclick="addToBasket()">Add to Card</a>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <br />
+    <footer>
+        <span>New Balance family of brands </span>
+        <img src="src/images/teamsports-logo.svg" />
+        <img src="src/images/warror.svg" />
+        <img src="src/images/brine-logo.svg" />
+    </footer>
+
+    <script src="utils/cookies.js"></script>
+    <script src="models/Product.js"></script>
+    <script src="models/Basket.js"></script>
+    <script src="handlers/ProductHandler.js"></script>
+    <script src="db/ProductDB.js"></script>
+    <script src="db/BasketDB.js"></script>
+    <script src="src/main.js"></script>
+    <script src="controllers/productCtrl.js"></script>
+</body>
+
+</html>

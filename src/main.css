@@ -1,0 +1,186 @@
+@font-face {
+    font-family: ubuntu;
+    src: url('fonts/Ubuntu-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: ubuntu;
+}
+
+header {
+    background: #fff;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.fl-r {
+    float: right;
+}
+
+.d-none {
+    display: none;
+}
+
+.section-title {
+    padding: 25px;
+    font-size: 200%;
+}
+
+main {
+    min-height: 550px;
+}
+
+#new-products,
+#products,
+#product {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#product {
+    margin-top: 25px;
+}
+
+.product-item {
+    width: 30%;
+    display: inline-block;
+    margin: 15px;
+    text-align: left;
+}
+
+.product-image {
+    width: 100%;
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.product-category {
+    line-height: 38px;
+    font-size: 13px;
+    color: #808080;
+}
+
+.product-price {
+    font-size: 14px;
+}
+
+.btn {
+    background: #CF082C;
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+    margin: 25px;
+    border: 3px solid #CF082C;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #CF082C
+}
+
+footer {
+    background: #FAFAFA;
+    text-align: center;
+    padding: 50px 0 80px;
+    margin-top: 60px;
+}
+
+footer img {
+    width: 120px;
+    height: 2rem;
+    margin-left: 10px;
+}
+
+footer span {
+    color: #808080;
+    font-size: 14px;
+    position: relative;
+    bottom: 10px;
+    margin-right: 25px;
+}
+
+.left-box,
+.right-box {
+    display: inline-block;
+    width: 47%;
+    vertical-align: top;
+    padding: 15px
+}
+
+.right-box p {
+    text-align: justify;
+}
+
+#product-item-template,
+#basket-template {
+    display: none;
+}
+
+#basket-section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#basket-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#basket-table tr td {
+    padding: 10px;
+}
+
+#basket-table tr:nth-child(2n) {
+    background: #eee;
+}
+
+#basket-table tr:nth-child(2n+1) {
+    background: #fafafa;
+}
+
+.btn-basket {
+    border: none;
+    background: none;
+    text-align: center;
+    width: 20px;
+    font-size: 21px;
+    border: 1px solid #ddd;
+    padding: 0;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-basket:hover {
+    background: #333;
+    color: #fff
+}
